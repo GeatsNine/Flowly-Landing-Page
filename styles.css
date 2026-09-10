@@ -358,3 +358,91 @@ body {
     line-height: 1.5;
     color: var(--color-text);
 }
+
+.product-showcase {
+    padding-block: 96px;
+    background-color: var(--color-background);
+}
+
+.product-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 85px;
+}
+
+.product-image-col img {
+    display: block;
+    width: 100%;
+    max-width: 693px;
+    height: auto;
+
+    box-shadow: 0 21.33px 32px rgba(15, 23, 42, 0.0157); 
+}
+
+.product-image-col {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product-description-col {
+    flex: 2;
+    max-width: 800px;
+}
+
+.product-description-col span {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-primary);
+}
+
+.product-description-col h2 {
+    font-weight: 800;
+    font-size: 42.67px;
+    color: var(--color-heading);
+
+    margin: 16px 0;
+}
+
+.product-description-col p {
+    font-size: 20px;
+    color: var(--color-text);
+    line-height: 1.5;
+
+    margin-bottom: 32px;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-list li {
+    font-size: 18px;
+    color: var(--color-text);
+
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 16px;
+}
+
+.benefits-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 21.33px;
+  height: 21.33px;
+
+  background-image: url("./assets/icons/check-circle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.second-product {
+    margin-top: 96px;
+}
