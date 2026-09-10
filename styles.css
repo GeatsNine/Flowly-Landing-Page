@@ -430,19 +430,85 @@ body {
 }
 
 .benefits-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
 
-  width: 21.33px;
-  height: 21.33px;
+    width: 21.33px;
+    height: 21.33px;
 
-  background-image: url("./assets/icons/check-circle.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+    background-image: url("./assets/icons/check-circle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .second-product {
     margin-top: 96px;
+}
+
+.testimonials {
+    padding-block: 96px;
+    background-color: var(--color-second-background);
+}
+
+.testimonials h2 {
+     font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    
+    margin-bottom: 75px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.testimonials-card {
+    padding: 43px;
+
+    border: 1.33px solid var(--color-border);
+    border-radius: 21.33px;
+
+    background-color: var(--color-surface);
+}
+
+.testimonials-card p {
+    color: var(--color-text);
+}
+
+.testimonials-card span {
+    font-size: 18.67px;
+    font-weight: 600;
+    color: var(--color-heading);
+}
+
+.review {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.6;
+
+    margin-bottom: 32px;
+}
+
+.person-industry {
+    font-size: 16px;
+    margin: 0;
+}
+
+.testimonials-name {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.testimonials-name img {
+    width: 54px;
+    height: auto;
+}
+
+.details {
+    vertical-align: middle;
 }
