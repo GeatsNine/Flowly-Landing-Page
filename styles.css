@@ -421,12 +421,11 @@ body {
 }
 
 .benefits-list li {
-    font-size: 18px;
+    font-size: 18.67px;
     color: var(--color-text);
 
     position: relative;
     padding-left: 32px;
-    margin-bottom: 16px;
 }
 
 .benefits-list li::before {
@@ -435,12 +434,19 @@ body {
     left: 0;
     top: 0;
 
-    width: 21.33px;
-    height: 21.33px;
-
-    background-image: url("./assets/icons/check-circle.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.product-description-col li {
+    margin-bottom: 16px;
+}
+
+.product-description-col li:before {
+    width: 21.33px;
+    height: 21.33px;
+    
+    background-image: url("./assets/icons/check-circle.png");
 }
 
 .second-product {
@@ -453,7 +459,7 @@ body {
 }
 
 .testimonials h2 {
-     font-size: 48px;
+    font-size: 48px;
     font-weight: 800;
     text-align: center;
     
@@ -511,4 +517,112 @@ body {
 
 .details {
     vertical-align: middle;
+}
+
+#pricing {
+    padding-block: 96px;
+    background-color: var(--color-background);
+}
+
+#pricing h2 {
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    
+    margin-bottom: 75px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 32px;
+}
+
+.pricing-card {
+    padding: 53px;
+
+    border: 1.33px solid var(--color-border);
+    border: 2.67px solid transparent;
+    border-radius: 21.33px;
+
+    background-color: var(--color-surface);
+
+    transition: border-color 0.2s ease-out;
+}
+
+.label-Professional-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-card .label-Professional-grid h3 {
+    font-size: 26.67px;
+    font-weight: 700;
+
+    color: var(--color-heading);
+
+    margin: 0;
+}
+
+.pricing-card .label-Professional-grid span {
+    font-size: 16px;
+    font-weight: 600;
+
+    color: var(--color-primary);
+
+    background-color: #EEF2FF;
+    border-radius: 100px;
+
+    padding: 5.33px 13.33px;
+}
+
+.pricing-card span {
+    font-size: 26.67px;
+    font-weight: 700;
+
+    color: var(--color-heading);
+}
+
+.pricing-card p {
+    font-size: 18.67px;
+    color: var(--color-text);
+
+    margin-top: 21px;
+}
+
+.pricing-card h3 {
+    font-size: 18.67px;
+    font-weight: normal;
+    color: var(--color-text-muted);
+
+    margin: 43px 0;
+}
+
+.pricing-card h3 span {
+    font-size: 48px;
+}
+
+.pricing-card li {
+    margin-bottom: 21.33px;
+}
+
+.pricing-card ul {
+    margin-bottom: 43px;
+}
+
+.pricing-card li:before {
+    width: 24px;
+    height: 24px;
+    
+    background-image: url("./assets/icons/purple-check.png");
+}
+
+.pricing-card:hover {
+    box-shadow: 0 16px 32px rgba(79, 70, 229, 0.0627);
+    border: 2.67px solid var(--color-primary)
 }
