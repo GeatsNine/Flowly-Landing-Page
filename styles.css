@@ -655,3 +655,79 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+.footer {
+    padding: 80px 0;
+    background-color: var(--color-surface);
+}
+
+.footer-nav-layout {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.footer-nav-layout img {
+    max-width: 140px;
+    height: auto;
+}
+
+.footer-nav-layout p {
+    font-size: 18.67px;
+    color: var(--color-text);
+    line-height: 1.5;
+
+    max-width: 440px;
+}
+
+.footer-nav {
+    max-width: 156px;
+    text-align: left;
+}
+
+.footer-nav h3 {
+    font-size: 18.67px;
+    font-weight: 700;
+
+    color: var(--color-heading);
+
+    margin: 0;
+}
+
+.footer-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav a, .footer-last-row a {
+    text-decoration: none;
+}
+
+.footer-nav a {
+    font-size: 18.67px;
+    color: var(--color-text);
+}
+
+.footer-nav li {
+    margin-top: 21px;
+}
+
+.footer-last-row {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-last-row {
+    font-size: 16px;
+    color: var(--color-text-muted);
+}
+
+.footer-last-row img {
+    width: 26.67px;
+    height: auto;
+
+    margin-left: 21.33px;
+}
