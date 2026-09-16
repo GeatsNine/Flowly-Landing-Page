@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowly</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,8 +44,10 @@
           </span>
           <h1>Run your client business without the chaos.</h1>
           <p class="hero-description">Keep your clients, projects, appointments, and daily work organised in one simple workspace.</p>
-          <button class="primary btn">Start Free</button>
-          <button class="secondary btn">View Demo</button>
+          <div class="hero-actions">
+            <button class="primary btn">Start Free</button>
+            <button class="secondary btn">View Demo</button>
+          </div>
           <p class="hero-note">No credit card required</p>
         </div>
         <div class="hero-right-col">
@@ -178,10 +181,22 @@
 
         <div class="product-layout">
           <div class="product-image-col">
-            <img
-              src="./assets/images/product-showcase-image-1.png"
-              alt="Product Showcase Image 1"
-            />
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="./assets/images/product-mobile.png"
+              >
+
+              <source
+                media="(max-width: 1024px)"
+                srcset="./assets/images/tablet-product-image-1.png"
+              >
+
+              <img
+                src="./assets/images/product-showcase-image-1.png"
+                alt="Product Showcase Image 1"
+              />
+            </picture>
           </div>
 
           <article class="product-description-col">
@@ -209,10 +224,22 @@
           </article>
 
           <div class="product-image-col">
-            <img
-              src="./assets/images/product-showcase-image-2.png"
-              alt="Product Showcase Image 1"
-            />
+            <picture>
+              <source
+                media="(max-width: 600px)"
+                srcset="./assets/images/product-mobile.png"
+              >
+
+              <source
+                media="(max-width: 1024px)"
+                srcset="./assets/images/tablet-product-image-2.png"
+              >
+
+              <img
+                src="./assets/images/product-showcase-image-2.png"
+                alt="Product Showcase Image 2"
+              />
+            </picture>
           </div>
         </div>
 
