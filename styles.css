@@ -306,7 +306,10 @@ h2 {
     text-align: center;
 }
 
-.features-layout {
+.features-layout, 
+.step-layout, 
+.testimonials-layout, 
+.pricing-layout {
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -330,10 +333,6 @@ h2 {
 #how-it-works h2 {
     max-width: 800px;
     margin: 0 auto 75px auto;
-}
-
-.step-layout {
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .step-card p, .feature-card p {
@@ -437,12 +436,8 @@ h2 {
     margin-top: 96px;
 }
 
-.testimonials h2 {
+.testimonials h2, #pricing h2 {
     margin-bottom: 75px;
-}
-
-.testimonials-layout {
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .testimonials-card p {
@@ -479,14 +474,6 @@ h2 {
 .testimonials-name img {
     width: 54px;
     height: auto;
-}
-
-#pricing h2 {
-    margin-bottom: 75px;
-}
-
-.pricing-layout {
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .pricing-card {
